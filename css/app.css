@@ -4,8 +4,7 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+:: Header
 */
 
 
@@ -13,17 +12,59 @@
    Shared Styles
 ----------------------------------------- */
 
+@font-face {
+    font-family: 'ArchitectsDaughterRegular';
+    src: url('/fonts/ArchitectsDaughter-webfont.eot');
+    src: url('/fonts/ArchitectsDaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ArchitectsDaughter-webfont.woff') format('woff'),
+         url('/fonts/ArchitectsDaughter-webfont.ttf') format('truetype'),
+         url('/fonts/ArchitectsDaughter-webfont.svg#ArchitectsDaughterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 /* -----------------------------------------
-   Page Name 1
+   Header
 ----------------------------------------- */
+#header #logo {
+  height: 47px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  width: 47px;
+}
 
+#header h1 {
+  font-family: "ArchitectsDaughterRegular", "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  line-height: 47px;
+  margin-bottom: 0px;
+  vertical-align: top;
+}
 
+#header p {
+  line-height: 47px;
+}
 
+#header hr {
+  margin-top: 10px;
+}
 
 /* -----------------------------------------
-   Page Name 2
+   Callout
 ----------------------------------------- */
 
+#callout .crop {
+  position: relative;
+}
 
+#callout .crop img {
+  border:1px solid #ccc;
+}
+
+#callout .crop h2 {
+  background: rgb(255,255,255); /* fallback color */
+  background: rgba(255,255,255, 0.9);
+  padding: 5px 15px;
+  position: absolute;
+  top: 50px;
+}
