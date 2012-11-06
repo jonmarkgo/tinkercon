@@ -32,4 +32,19 @@
     e.preventDefault();
   });
 
+  $('#form #submit').click(function(event) {
+    var email = $('#email').val();
+
+    if(!/^(.*)@(.*)\.(.*)$/.test(email)) {
+      alert("Invalid email");
+      return;
+    }
+
+    $.post("http://tinkercon-widget.herokuapp.com/subscribe", { email: email }, function(res) {
+      $('#form').html('<h4>Success!</h4>');
+    });
+
+    event.preventDefault();
+  });
+
 })(jQuery, this);
