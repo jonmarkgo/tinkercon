@@ -96,7 +96,6 @@
    Main
 ----------------------------------------- */
 #main #tickets .button, #main #talks .button, #main #signup #form {
-  margin-bottom: 20px;
   margin-top: 20px;
   width: 100%;
 }
