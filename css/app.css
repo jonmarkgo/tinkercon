@@ -21,7 +21,10 @@
          url('/fonts/ArchitectsDaughter-webfont.svg#ArchitectsDaughterRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+.center {
+  text-align: center;
 }
 
 /* -----------------------------------------
@@ -87,4 +90,21 @@
 
 #callout .crop .title h3 {
   margin-top: 0;
+}
+
+/* -----------------------------------------
+   Main
+----------------------------------------- */
+#main #tickets .button, #main #talks .button, #main #signup #form {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#main #signup #form {
+  padding-top: 15px;
+}
+
+#main .push {
+  min-height: 150px;
 }
