@@ -27,6 +27,17 @@
   text-align: center;
 }
 
+body {
+  font-family:'ArchitectsDaughterRegular', Helvetica, Arial, sans-serif;
+  background:url("../images/textured-bg.jpg");
+  -moz-background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  color: #B71F24;
+}
+
 /* -----------------------------------------
    Header
 ----------------------------------------- */
@@ -58,25 +69,27 @@
 
 #callout .crop {
   position: relative;
-}
-
-#callout .crop img {
-  border:1px solid #ccc;
+  background: url("../images/logo-hero.png") no-repeat center 20px transparent;
+  display: block;
+  height: 470px;
 }
 
 #callout .crop .highlight {
   background: rgb(255,255,255); /* fallback color */
-  background: rgba(255,255,255, 0.9);
+  background: rgba(255,255,255, 0.15);
   padding: 5px 15px;
   position: absolute;
+  color:gray;
 }
 
 #callout .crop .title {
-  top: 50px;
+  bottom: 100px;
 }
-
+#callout .crop .title h2 {
+  color:#B71F24;
+}
 #callout .crop .description {
-  bottom: 75px;
+  bottom: 10px;
 }
 
 #callout .crop .description p {
@@ -106,4 +119,26 @@
 
 #main .push {
   min-height: 150px;
+}
+
+/* Overrides */
+
+.button {
+  width: auto;
+  background: #B71F24;
+  border: 1px solid #7A1F24;
+}
+.button:hover {
+  background:#BC3F48;
+}
+.button.disabled, .button[disabled] {
+opacity: 0.6;
+cursor: default;
+background:#BC3F48;
+}
+a {
+  color:#7A1F24;
+}
+a:hover {
+  color:black;
 }
